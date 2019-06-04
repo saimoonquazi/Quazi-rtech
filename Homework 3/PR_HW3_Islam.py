@@ -227,6 +227,8 @@ for i in range(len(t_scores)):
         print('Petal Width Feature for %s is a bad good feature'%test_labels[i])
 
 
+# From the T-Scores above, it seems that Petal Width is a very strong feature. All the scores at least 17 times higher than the corresponding critical value extracted from the T-Distribution table. This further clarifies the findings from assignment 2. 
+
 # In[53]:
 
 
@@ -258,3 +260,5 @@ for i in range(len(anova_scores)):
     else:
         print('%s is a bad good feature'%features[i])
 
+
+# The ANOVA test was run for all features. Once again all the features seem to have a much higher F score that the corresponding critical value for the sample size. The F values also suggest that out of the four, Sepal Width is the weakest feature, something that was found in assignment 2 as well. But according to the F-Distribution table critical value, all the features are good features. 
